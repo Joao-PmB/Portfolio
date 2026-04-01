@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --corAmarela: #FBCA2D;
+    --corAzul: #17043B;
+}
+
+.interface {
+    max-width: 1380px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+/* Estilização do cabeçalho */
+header{
+    background-color: var(--corAmarela);
+}
+
+
+
+/* ver o por que esse código não está funcionando como deveria. */
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
