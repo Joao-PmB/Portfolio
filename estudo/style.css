@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+:root {
+  --corAmarela: #fbca2d;
+  --corAzul: #17043b;
+  --corBranca: #FFFFFF;
+}
+
+.interface {
+  max-width: 1380px;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+
+/* Estilização do cabeçalho */
+header {
+  background-color: transparent;
+  padding: 16px 0;
+  position: fixed;
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: solid 2px var(--corBranca);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--corAmarela);
+  color: var(--corAzul);
+}
+
+header > .interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav.menu-desktop ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+header nav.menu-desktop a{
+  color: var(--corBranca);
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+
+header nav.menu-desktop a:hover{
+  color: var(--corAmarela);
+}
+
+header nav.menu-desktop button{
+  width: 144px;
+  height: 48px;
+}
+
+section.hero {
+  background-image: linear-gradient(to left, var(--corAzul) 70%, var(--corAmarela) 30%);
+  padding-top: 144px;
+}
+
+.hero > .interface {
+  display: flex;
+  /*para eu inverter: flex-direction: row-reverse; */
+  align-items: center;
+  gap: 120px;
+}
+
+.hero .txt-hero h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--corBranca);
+
+}
+
+.hero .txt-hero h1 span {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--corAmarela);
+  display: block;
+}
+
+.hero .txt-hero p{
+  line-height: 1.5;
+  color: var(--corBranca);
+  margin: 24px 0;
+}
