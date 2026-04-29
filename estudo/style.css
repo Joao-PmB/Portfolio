@@ -9,6 +9,12 @@
   --corAmarela: #fbca2d;
   --corAzul: #17043b;
   --corBranca: #FFFFFF;
+  --corAzulEscuro: #090117;
+  --corCinza: #8D8D8D;
+}
+
+body {
+  background-color: var(--corAzulEscuro);
 }
 
 .interface {
@@ -27,6 +33,7 @@ header {
 
 button {
   background-color: transparent;
+  color: var(--corBranca);
   border: solid 2px var(--corBranca);
   border-radius: 8px;
   cursor: pointer;
@@ -80,6 +87,10 @@ section.hero {
   gap: 120px;
 }
 
+.hero .img-hero {
+  line-height: 0;
+}
+
 .hero .txt-hero h1 {
   font-size: 3rem;
   font-weight: 300;
@@ -98,4 +109,42 @@ section.hero {
   line-height: 1.5;
   color: var(--corBranca);
   margin: 24px 0;
+}
+
+.hero .txt-hero button{
+  width: 140px;
+  height: 40px;
+}
+
+section.sobre-mim {
+  padding: 80px 0;
+}
+
+section.sobre-mim > .interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 96px;
+}
+
+h1.titulo-sobre {
+  font-size: 4rem;
+  color: var(--corBranca);
+}
+
+h1.titulo-sobre span {
+  color: var(--corAmarela);
+}
+
+section.sobre-mim .txt-sobre p {
+  color: var(--corCinza);
+  line-height: 1.6;
+  margin: 24px 0;
+  text-align: justify;
+}
+
+section.sobre-mim .btn-redes button {
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
 }
