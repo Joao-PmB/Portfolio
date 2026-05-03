@@ -164,8 +164,12 @@ header nav.menu-desktop button {
   height: 48px;
 }
 
+section > .interface {
+  padding: 100px 0;
+}
+
 section.introducao {
-  padding-top: 30px;
+  /* padding-top: 30px; */
 }
 
 section.introducao p.biografia {
@@ -173,15 +177,16 @@ section.introducao p.biografia {
 }
 
 .introducao > .interface {
+  /* min-height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: space-around;
     /* gap: 144px; */
-    padding-top: 140px;
+    padding-top: 200px;
 }
 
 section.sobre-mim {
-  padding: 120px 0;
+  /* padding: 120px 0; */
 }
 
 section.sobre-mim > .interface{
