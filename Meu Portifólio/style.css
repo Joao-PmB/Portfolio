@@ -7,7 +7,7 @@
 
 :root {
   --corPreta: #0a0a0a;
-  --corVermelha: #ff1a1a;
+  --corVermelha: #dc2626;
   --corBranca: #f5f5f5;
   --corCinza: #666;
 }
@@ -77,6 +77,7 @@ header nav.menu-desktop a {
 
 header nav.menu-desktop a:hover {
   color: var(--corBranca);
+  text-decoration: underline;
 }
 
 header nav.menu-desktop button {
@@ -172,13 +173,15 @@ button.curriculo {
   cursor: pointer;
 }
 
-button:hover {
+button:hover,
+footer .btn-redes a:hover button {
   background-color: var(--corVermelha);
   color: var(--corBranca);
 }
 
-section > .interface {
-  padding-top: 100px;
+section > .interface,
+footer > .interface {
+  padding-top: 150px;
 }
 
 section.introducao p.biografia {
@@ -201,7 +204,8 @@ section.sobre-mim > .interface {
   flex-direction: column;
 }
 
-section.sobre-mim .txt-sobre .titulo-section {
+section.sobre-mim .txt-sobre .titulo-section,
+section.habilidades .titulo-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,12 +231,47 @@ section.sobre-mim .btn-redes button {
   margin-right: 10px;
 }
 
-section.portfolio p {
+/* HABILIDADES */
+section.habilidades .tecnologias {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 48px;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 128px;
+}
+
+section.habilidades .tecnologias .tecnologia-box {
+  width: 120px;
+  height: 120px;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #0d0d0d;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  box-shadow: 6px 8px 6px #1a0505;
+}
+
+section.habilidades .tecnologias .tecnologia-box:hover {
+  background-color: #2d1010; /* fica um pouco mais vivo no hover */
+  
+}
+
+section.habilidades .tecnologias .tecnologia-box p {
+  font-size: 1rem;
   color: var(--corCinza);
-  margin-bottom: 12px;
 }
 
 /* PORTFÓLIO */
+
+section.portfolio p {
+  color: var(--corCinza);
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
 
 .portfolio-container .portfolio-box {
   min-width: 200px;
@@ -262,7 +301,7 @@ section.portfolio p {
   font-size: 20px;
 
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .portfolio-container .portfolio-box .info-portfolio:hover {
@@ -288,5 +327,52 @@ section.portfolio p {
   background-color: var(--corVermelha);
 }
 
+/* Rodapé */
 
+footer {
+  padding-top: 80px;
+  padding-bottom: 200px;
+}
 
+footer > .interface {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 200px;
+}
+
+footer .btn-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+footer .btn-redes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  color: var(--corVermelha);
+  flex-direction: column;
+  gap: 24px;
+  text-decoration: none;
+}
+
+footer .btn-redes button {
+  width: 72px;
+  height: 72px;
+  font-size: 36px;
+}
+
+footer .btn-redes p {
+  font-size: 1rem;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+footer .btn-redes a:hover p {
+  color: var(--corBranca);
+}
