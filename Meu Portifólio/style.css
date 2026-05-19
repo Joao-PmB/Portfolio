@@ -53,6 +53,7 @@ header {
   padding: 16px 0;
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 header > .interface {
@@ -114,6 +115,11 @@ header nav.menu-desktop button {
   margin-bottom: 0.5rem;
 }
 
+section.introducao .img-perfil  img {
+    border: 3px solid #dc2626;
+    border-radius: 50%;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 900;
@@ -160,17 +166,24 @@ button {
   cursor: pointer;
 }
 
-button.curriculo {
+a.curriculo button{
   margin-top: 2rem;
-  background-color: var(--corVermelha);
-  /* border: solid 2px var(--corBranca); */
-  border-radius: 24px;
+  background: linear-gradient(90deg, var(--corVermelha), #af1010);
+  border: none;
   color: var(--corBranca);
-  font-size: 1.5rem;
-  height: 56px;
-  width: 156px;
-  transition: 0.3s;
+  width: 180px;
+  height: 58px;
+  border-radius: 14px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: 0.3s ease;
   cursor: pointer;
+}
+
+a.curriculo:hover button{
+  transform: scale(0.9);
+  background: #af1010;
+  
 }
 
 button:hover,
@@ -204,6 +217,7 @@ section.sobre-mim > .interface {
   flex-direction: column;
 }
 
+
 section.sobre-mim .txt-sobre .titulo-section,
 section.habilidades .titulo-section {
   display: flex;
@@ -221,7 +235,12 @@ section.sobre-mim .txt-sobre p {
   width: 1000px;
   margin: 24px 0;
   text-align: justify;
+  color: var(--corCinza);
+}
+
+section.sobre-mim span p{
   color: var(--corBranca);
+  margin-bottom: 15px;
 }
 
 section.sobre-mim .btn-redes button {
@@ -241,7 +260,7 @@ section.habilidades .tecnologias {
   margin-top: 128px;
 }
 
-section.habilidades .tecnologias .tecnologia-box {
+section.habilidades .tecnologias .tecnologia-box a{
   width: 120px;
   height: 120px;
   flex-direction: column;
@@ -253,11 +272,12 @@ section.habilidades .tecnologias .tecnologia-box {
   align-items: center;
   font-size: 3rem;
   box-shadow: 6px 8px 6px #1a0505;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-section.habilidades .tecnologias .tecnologia-box:hover {
+section.habilidades .tecnologias .tecnologia-box a:hover {
   background-color: #2d1010; /* fica um pouco mais vivo no hover */
-  
 }
 
 section.habilidades .tecnologias .tecnologia-box p {
@@ -329,15 +349,11 @@ section.portfolio p {
 
 /* Rodapé */
 
-footer {
-  padding-top: 80px;
-  padding-bottom: 200px;
-}
-
 footer > .interface {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   flex-direction: column;
   gap: 200px;
 }
@@ -357,8 +373,12 @@ footer .btn-redes a {
   height: 120px;
   color: var(--corVermelha);
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   text-decoration: none;
+  transition: 0.3s ease;
+}
+footer .btn-redes a:hover {
+  transform: scale(1.3);
 }
 
 footer .btn-redes button {
@@ -368,6 +388,7 @@ footer .btn-redes button {
 }
 
 footer .btn-redes p {
+  display: flex;
   font-size: 1rem;
   font-weight: 300;
   transition: 0.3s;
