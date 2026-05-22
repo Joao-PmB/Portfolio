@@ -1,0 +1,214 @@
+@media (max-width: 1050px) {
+  .menu-desktop {
+    display: none;
+  }
+
+  section > .interface,
+  footer > .interface {
+    padding-top: 100px;
+  }
+
+  /* INTRODUÇÃO */
+
+  section.introducao > .interface {
+    padding-top: 70px;
+  }
+
+  .saudacao {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  section.introducao .img-perfil img {
+    border: 3px solid #dc2626;
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--corBranca);
+    margin-bottom: 0.8rem;
+  }
+
+  section.introducao h1 {
+    font-size: 1.8rem;
+  }
+
+  .introducao h1 span {
+    display: block;
+  }
+
+  .cargo {
+    margin-bottom: 1.5rem;
+  }
+
+  .cargo-texto {
+    font-family: "Fira Code", monospace;
+    font-size: 1.3rem;
+    color: var(--corVermelha);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--corVermelha);
+    display: inline-block;
+    width: 0;
+    animation:
+      digitar 2.5s steps(20) 0.3s forwards,
+      piscar 1.5s step-end 2.8s infinite;
+  }
+
+  .colchete {
+    color: var(--corCinza);
+  }
+
+  button {
+    background-color: transparent;
+    border: solid 2px var(--corVermelha);
+    border-radius: 8px;
+    color: var(--corVermelha);
+    font-size: 1.1rem;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  section.introducao p.biografia {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .introducao > .interface {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .introducao .img-perfil img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  /* SOBRE-MIM */
+
+section.sobre-mim > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section.sobre-mim .txt-sobre .titulo-section,
+section.habilidades .titulo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--corBranca);
+  gap: 10px;
+}
+
+.titulo-section span {
+  color: var(--corVermelha);
+}
+
+section.sobre-mim .txt-sobre p {
+  width: 350px;
+  text-align: juctify;
+  font-size: 0.8rem;
+}
+
+section.sobre-mim span p {
+  text-align: center;
+}
+
+section.sobre-mim .btn-redes button {
+  width: 48px;
+  height: 48px;
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+/* HABILIDADES */
+section.habilidades .tecnologias {
+  gap: 8px;
+}
+
+section.habilidades .tecnologias .tecnologia-box a {
+  width: 100px;
+  height: 100px;
+}
+
+/* HABILIDADES */
+
+.portfolio .portfolio-container {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr;
+  gap: 1.5rem;
+}
+
+/* MEUS PORTFÓLIOS */
+
+section.habilidades > .interface {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.portfolio-container .projeto1 {
+  background-image: url(./imagens/Meu\ Portfólio.png);
+}
+.portfolio-container .projeto2 {
+  background-color: var(--corVermelha);
+}
+
+.portfolio-container .projeto3 {
+  background-color: var(--corVermelha);
+}
+
+/* Rodapé */
+
+footer > .interface {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 200px;
+}
+
+footer .btn-redes {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 80px;
+}
+
+footer .btn-redes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  color: var(--corVermelha);
+  flex-direction: column;
+  gap: 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+footer .btn-redes a:hover {
+  transform: scale(1.3);
+}
+
+footer .btn-redes button {
+  width: 72px;
+  height: 72px;
+  font-size: 36px;
+}
+
+footer .btn-redes p {
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+footer .btn-redes a:hover p {
+  color: var(--corBranca);
+}
+
+}

@@ -12,6 +12,10 @@
   --corCinza: #666;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--corPreta);
 }
@@ -33,7 +37,7 @@ body {
 }
 
 .logotipo .bracket,
-.logotipo .slash {
+.logotipo .barra {
   color: var(--corVermelha);
 }
 
@@ -46,6 +50,11 @@ body {
   max-width: 1380px;
   padding: 0 4%;
   margin: 0 auto;
+}
+
+section > .interface,
+footer > .interface {
+  padding-top: 150px;
 }
 
 header {
@@ -115,9 +124,9 @@ header nav.menu-desktop button {
   margin-bottom: 0.5rem;
 }
 
-section.introducao .img-perfil  img {
-    border: 3px solid #dc2626;
-    border-radius: 50%;
+section.introducao .img-perfil img {
+  border: 3px solid #dc2626;
+  border-radius: 50%;
 }
 
 h1 {
@@ -166,7 +175,7 @@ button {
   cursor: pointer;
 }
 
-a.curriculo button{
+a.curriculo button {
   margin-top: 2rem;
   background: linear-gradient(90deg, var(--corVermelha), #af1010);
   border: none;
@@ -180,21 +189,15 @@ a.curriculo button{
   cursor: pointer;
 }
 
-a.curriculo:hover button{
+a.curriculo:hover button {
   transform: scale(0.9);
   background: #af1010;
-  
 }
 
 button:hover,
 footer .btn-redes a:hover button {
   background-color: var(--corVermelha);
   color: var(--corBranca);
-}
-
-section > .interface,
-footer > .interface {
-  padding-top: 150px;
 }
 
 section.introducao p.biografia {
@@ -205,7 +208,6 @@ section.introducao p.biografia {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-top: 200px;
 }
 
 /* SOBRE-MIM */
@@ -216,7 +218,6 @@ section.sobre-mim > .interface {
   justify-content: center;
   flex-direction: column;
 }
-
 
 section.sobre-mim .txt-sobre .titulo-section,
 section.habilidades .titulo-section {
@@ -238,8 +239,8 @@ section.sobre-mim .txt-sobre p {
   color: var(--corCinza);
 }
 
-section.sobre-mim span p{
-  color: var(--corBranca);
+section.sobre-mim span p {
+  color: var(--corVermelha);
   margin-bottom: 15px;
 }
 
@@ -260,7 +261,7 @@ section.habilidades .tecnologias {
   margin-top: 128px;
 }
 
-section.habilidades .tecnologias .tecnologia-box a{
+section.habilidades .tecnologias .tecnologia-box a {
   width: 120px;
   height: 120px;
   flex-direction: column;
@@ -291,6 +292,7 @@ section.portfolio p {
   color: var(--corCinza);
   margin-top: 36px;
   margin-bottom: 12px;
+  font-size: 0.7rem;
 }
 
 .portfolio-container .portfolio-box {
