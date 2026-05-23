@@ -315,12 +315,12 @@ section.portfolio p {
 .portfolio-container .portfolio-box .info-portfolio {
   position: absolute;
   inset: 0;
-  background-color: #49494922;
+  background-color: #49494933;
   border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--corBranca);
+  color: var(--corVermelha);
   font-weight: 600;
   font-size: 20px;
 
@@ -344,12 +344,12 @@ section.portfolio p {
   background-image: url(./imagens/portfolio.png);
 }
 .portfolio-container .projeto2 {
-  background-image: url(./imagens/relogio.png);
+  background-image: url(./imagens/Card-Profile.png);
   background-position: top;
 }
 
 .portfolio-container .projeto3 {
-  background-image: url(./imagens/Card-Profile.png);
+  background-image: url(./imagens/relogio.png);
   background-position: top;
 }
 

@@ -6,7 +6,7 @@
   /* INTRODUÇÃO */
 
   section.introducao > .interface {
-    padding-top: 70px;
+    padding-top: 65px;
   }
 
   .saudacao {
@@ -52,12 +52,15 @@
   /* SOBRE-MIM */
 
 section.sobre-mim .txt-sobre p {
-  width: 400px;
-  text-align: juctify;
+  width: 350px;
+  text-align: justify;
   font-size: 0.8rem;
 }
 
 section.sobre-mim span p {
+  color: var(--corVermelha);
+  margin-bottom: 15px;
+  width: 350px;
   text-align: center;
 }
 
@@ -70,7 +73,7 @@ section.sobre-mim .btn-redes button {
 
 /* HABILIDADES */
 section.habilidades .tecnologias {
-  gap: 8px;
+  gap: 12px;
 }
 
 section.habilidades .tecnologias .tecnologia-box a {
