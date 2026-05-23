@@ -234,7 +234,7 @@ section.habilidades .titulo-section {
 
 section.sobre-mim .txt-sobre p {
   width: 1000px;
-  margin: 24px 0;
+  margin: 36px 0;
   text-align: justify;
   color: var(--corCinza);
 }
@@ -242,6 +242,8 @@ section.sobre-mim .txt-sobre p {
 section.sobre-mim span p {
   color: var(--corVermelha);
   margin-bottom: 15px;
+  width: 1000px;
+  text-align: center;
 }
 
 section.sobre-mim .btn-redes button {
@@ -339,14 +341,16 @@ section.portfolio p {
 /* MEUS PORTFÓLIOS */
 
 .portfolio-container .projeto1 {
-  background-image: url(./imagens/Meu\ Portfólio.png);
+  background-image: url(./imagens/portfolio.png);
 }
 .portfolio-container .projeto2 {
-  background-color: var(--corVermelha);
+  background-image: url(./imagens/relogio.png);
+  background-position: top;
 }
 
 .portfolio-container .projeto3 {
-  background-color: var(--corVermelha);
+  background-image: url(./imagens/Card-Profile.png);
+  background-position: top;
 }
 
 /* Rodapé */

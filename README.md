@@ -1,0 +1,1 @@
+Portfólio pessoal funcional e responsivo (PC/Mobile), criado para subir meus projetos ao longo do meu estudo e dedicação como um desenvolvedor.
