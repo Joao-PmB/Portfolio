@@ -375,8 +375,8 @@ footer .btn-redes a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   color: var(--corVermelha);
   flex-direction: column;
   gap: 16px;
@@ -395,7 +395,7 @@ footer .btn-redes button {
 
 footer .btn-redes p {
   display: flex;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
   transition: 0.3s;
 }
