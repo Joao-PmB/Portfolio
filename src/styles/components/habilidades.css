@@ -1,0 +1,33 @@
+section.habilidades .tecnologias {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 48px;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 128px;
+}
+
+section.habilidades .tecnologias .tecnologia-box a {
+  width: 120px;
+  height: 120px;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #0d0d0d;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  box-shadow: 6px 8px 6px #1a0505;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+section.habilidades .tecnologias .tecnologia-box a:hover {
+  background-color: #2d1010;
+}
+
+section.habilidades .tecnologias .tecnologia-box p {
+  font-size: 1rem;
+  color: var(--corCinza);
+}

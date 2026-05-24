@@ -3,14 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsividade.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link rel="icon" href="./imagens/favicon-92.jpg">
-
-    <script src="script.js" defer></script> 
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="icon" href="./src/assets/images/favicon-92.jpg" />
+    <script src="./src/scripts/menu-mobile.js" defer></script>
     <title>Meu Portfólio</title>
   </head>
 
@@ -30,7 +37,6 @@
             <li><a href="#sobre-mim">Sobre mim</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#portfolio">Portfólio</a></li>
-
             <li>
               <a href="#contatos"><button>Contatos</button></a>
             </li>
@@ -43,26 +49,25 @@
       <section class="introducao" id="inicio">
         <div class="interface">
           <div class="img-perfil">
-            <img
-              src="imagens/foto-perfil2.jpeg"
-              alt="foto de perfil"
-              width="450"
-              height="450"
-            />
+            <a href="https://www.linkedin.com/in/joaopedromb/" target="_blank">
+              <img
+                src="./src/assets/images/foto-perfil2.jpeg"
+                alt="foto de perfil"
+                width="450"
+                height="450"
+            /></a>
           </div>
 
           <div class="txt-introducao">
-            <p class="saudacao">
-              Opa, seja bem-vindo ao meu portfólio!
-            </p>
+            <p class="saudacao">Opa, seja bem-vindo ao meu portfólio!</p>
 
-            <h1 class="titulo-section">
-              Eu sou <span>João Pedro</span>
-            </h1>
+            <h1 class="titulo-section">Eu sou <span>João Pedro</span></h1>
 
             <div class="cargo">
               <span class="cargo-texto">
-                <span class="colchete">&lt;</span>Desenvolvedor Web<span class="colchete">/&gt;</span
+                <span class="colchete">&lt;</span>Desenvolvedor Web<span
+                  class="colchete"
+                  >/&gt;</span
                 >
               </span>
             </div>
@@ -72,7 +77,13 @@
               web. Transformando ideias em interfaces funcionais.
             </p>
 
-            <a class="curriculo" href="./Currículo/Joao_Barros_CV.pdf" download><button class="curriculo">CV Download</button></a>
+            <a
+              class="curriculo"
+              href="./src/assets/docs/Joao_Barros_CV.pdf"
+              download
+            >
+              <button class="curriculo">CV Download</button>
+            </a>
           </div>
         </div>
       </section>
@@ -82,93 +93,84 @@
           <div class="txt-sobre">
             <h1 class="titulo-section">Sobre <span>Mim</span></h1>
             <p>
-              João Pedro de Moraes Barros, tenho 19 anos e sou estudante de Ciência da
-              Computação na PUC Goiás. Tive meu primeiro contato com programação e
-              tecnologia ainda no Ensino Médio, onde descobri uma grande identificação com a
-              área e desenvolvi interesse por desenvolvimento de sistemas e interfaces web,
-              na qual consigo aplicar toda a minha criatividade.
-              Desde então, venho aprofundando meus conhecimentos através de estudos,
-              projetos pessoais e prática constante, buscando evoluir cada vez mais como
-              desenvolvedor.
+              João Pedro de Moraes Barros, tenho 19 anos e sou estudante de
+              Ciência da Computação na PUC Goiás. Tive meu primeiro contato com
+              programação e tecnologia ainda no Ensino Médio, onde descobri uma
+              grande identificação com a área e desenvolvi interesse por
+              desenvolvimento de sistemas e interfaces web, na qual consigo
+              aplicar toda a minha criatividade. Desde então, venho aprofundando
+              meus conhecimentos através de estudos, projetos pessoais e prática
+              constante, buscando evoluir cada vez mais como desenvolvedor.
             </p>
-
-              <p>
-                Tenho foco em desenvolvimento web/software, principalmente na criação de
-                interfaces responsivas e funcionais. Possuo experiência com HTML,
-                CSS, JavaScript, Bootstrap, Git, PostgreSQL e Figma, além de conhecimentos em
-                lógica de programação, manipulação de DOM e versionamento de código. Hoje em dia,
-                estou com foco total para poder trabalhar com novas tecnologias
-                para expandir meu repertório, como uma framework (React, Electron e Vue), TypeScript
-                e TailwindCSS.
-              </p>
+            <p>
+              Tenho foco em desenvolvimento web/software, principalmente na
+              criação de interfaces responsivas e funcionais. Possuo experiência
+              com HTML, CSS, JavaScript, Bootstrap, Git, PostgreSQL e Figma,
+              além de conhecimentos em lógica de programação, manipulação de DOM
+              e versionamento de código. Hoje em dia, estou com foco total para
+              poder trabalhar com novas tecnologias para expandir meu
+              repertório, como uma framework (React, Electron e Vue), TypeScript
+              e TailwindCSS.
+            </p>
           </div>
 
-          <span
-            ><p>
-              Atualmente,
-              busco uma oportunidade de estágio na área de tecnologia para fortalecer minhas
-              habilidades técnicas, adquirir experiência profissional e contribuir em
-              projetos reais como desenvolvedor frontend.
-            </p></span
-          >
-
-          <!-- <div class="btn-redes">
-            <a href="mailto:pejouta@gmail.com" target="_blank">
-              <button><i class="bi bi-envelope-at-fill"></i></button>
-            </a>
-            <a href="https://github.com/Joao-PmB" target="_blank">
-              <button><i class="bi bi-github"></i></button>
-            </a>
-            <a href="https://www.linkedin.com/in/joaopedromb/" target="_blank">
-              <button><i class="bi bi-linkedin"></i></button>
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=5562994234351" target="_blank">
-              <button><i class="bi bi-whatsapp"></i></button>
-            </a>
-          </div> -->
+          <span>
+            <p>
+              Atualmente, busco uma oportunidade de estágio na área de
+              tecnologia para fortalecer minhas habilidades técnicas, adquirir
+              experiência profissional e contribuir em projetos reais como
+              desenvolvedor frontend.
+            </p>
+          </span>
         </div>
       </section>
 
       <section class="habilidades" id="habilidades">
         <div class="interface">
           <h1 class="titulo-section">Habilidades</h1>
-
           <div class="tecnologias">
             <div class="tecnologia-box">
-              <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+              <a
+                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+                target="_blank"
+              >
                 <i class="devicon-html5-plain colored"></i>
                 <p>HTML</p>
               </a>
             </div>
-
             <div class="tecnologia-box">
-              <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
+              <a
+                href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+                target="_blank"
+              >
                 <i class="devicon-css3-plain colored"></i>
                 <p>CSS</p>
               </a>
             </div>
-
             <div class="tecnologia-box">
-              <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+              <a
+                href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+                target="_blank"
+              >
                 <i class="devicon-javascript-plain colored"></i>
                 <p>JAVASCRIPT</p>
               </a>
             </div>
-
             <div class="tecnologia-box">
               <a href="https://www.postgresql.org/about/" target="_blank">
                 <i class="devicon-postgresql-plain colored"></i>
                 <p>POSTGRESQL</p>
               </a>
             </div>
-
             <div class="tecnologia-box">
-              <a href="https://help.figma.com/hc/en-us/articles/14563969806359-What-is-Figma" target="_blank">
+              <a
+                href="https://help.figma.com/hc/en-us/articles/14563969806359-What-is-Figma"
+                target="_blank"
+              >
                 <i class="devicon-figma-plain colored"></i>
                 <p>FIGMA</p>
               </a>
             </div>
-
             <div class="tecnologia-box">
               <a href="https://git-scm.com/" target="_blank">
                 <i class="devicon-git-plain colored"></i>
@@ -181,36 +183,26 @@
 
       <section class="portfolio" id="portfolio">
         <div class="interface">
-          <h1 class="titulo-section">
-            Meu <span>Portfólio</span>
-          </h1>
-
-          <p>
-            Passe o cursor por cima desse projeto!
-          </p>
+          <h1 class="titulo-section">Meu <span>Portfólio</span></h1>
+          <p>Passe o cursor por cima desse projeto!</p>
 
           <article class="portfolio-container">
-            <a href="https://portfolio-zeta-ten-aet3w7o2ef.vercel.app/" target="_blank">
+            <a
+              href="https://portfolio-zeta-ten-aet3w7o2ef.vercel.app/"
+              target="_blank"
+            >
               <div class="portfolio-box projeto1">
-                <div class="info-portfolio">
-                  <span>Portfólio</span>
-                </div>
+                <div class="info-portfolio"><span>Portfólio</span></div>
               </div>
             </a>
-
             <a href="https://card-profile-tan.vercel.app/" target="_blank">
               <div class="portfolio-box projeto2">
-                <div class="info-portfolio">
-                  <span>Card-Profile</span>
-                </div>
+                <div class="info-portfolio"><span>Card-Profile</span></div>
               </div>
             </a>
-
             <a href="https://relogio-hazel-psi.vercel.app/" target="_blank">
               <div class="portfolio-box projeto3">
-                <div class="info-portfolio">
-                  <span>Relógio</span>
-                </div>
+                <div class="info-portfolio"><span>Relógio</span></div>
               </div>
             </a>
           </article>
@@ -221,24 +213,23 @@
     <footer id="contatos">
       <div class="interface">
         <h1 class="titulo-section">Contatos</h1>
-
         <div class="btn-redes">
           <a href="mailto:pejouta@gmail.com" target="_blank">
             <button><i class="bi bi-envelope-at-fill"></i></button>
             <p>pejouta@gmail.com</p>
           </a>
-
           <a href="https://github.com/Joao-PmB" target="_blank">
             <button><i class="bi bi-github"></i></button>
             <p>@Joao-PmB</p>
           </a>
-
           <a href="https://www.linkedin.com/in/joaopedromb/" target="_blank">
             <button><i class="bi bi-linkedin"></i></button>
             <p>@joaopedromb</p>
           </a>
-
-          <a href="https://api.whatsapp.com/send?phone=5562994234351" target="_blank">
+          <a
+            href="https://api.whatsapp.com/send?phone=5562994234351"
+            target="_blank"
+          >
             <button><i class="bi bi-whatsapp"></i></button>
             <p>+55 62 99423-4351</p>
           </a>

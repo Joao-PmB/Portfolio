@@ -1,0 +1,54 @@
+footer > .interface {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 200px;
+}
+
+footer .btn-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+footer .btn-redes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  color: var(--corVermelha);
+  flex-direction: column;
+  gap: 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+footer .btn-redes a:hover {
+  transform: scale(1.3);
+}
+
+footer .btn-redes button {
+  width: 72px;
+  height: 72px;
+  font-size: 36px;
+}
+
+footer .btn-redes p {
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+footer .btn-redes a:hover button {
+  background-color: var(--corVermelha);
+  color: var(--corBranca);
+}
+
+footer .btn-redes a:hover p {
+  color: var(--corBranca);
+}

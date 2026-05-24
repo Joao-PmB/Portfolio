@@ -1,0 +1,84 @@
+@keyframes digitar {
+  from { width: 0; }
+  to { width: 20ch; }
+}
+
+@keyframes piscar {
+  0%, 70%, 100% { border-color: var(--corVermelha); }
+  75%, 95% { border-color: transparent; }
+}
+
+.saudacao {
+  font-size: 1rem;
+  color: var(--corCinza);
+  margin-bottom: 0.5rem;
+}
+
+section.introducao .img-perfil img {
+  border: 3px solid #dc2626;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+section.introducao .img-perfil img:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.cargo {
+  margin-bottom: 1.5rem;
+}
+
+.cargo-texto {
+  font-family: "Fira Code", monospace;
+  font-size: 1.3rem;
+  color: var(--corVermelha);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--corVermelha);
+  display: inline-block;
+  width: 0;
+  animation:
+    digitar 2.5s steps(20) 0.3s forwards,
+    piscar 1.5s step-end 2.8s infinite;
+}
+
+.colchete {
+  color: var(--corCinza);
+}
+
+.biografia {
+  font-size: 1rem;
+  color: var(--corCinza);
+  line-height: 1.75;
+  max-width: 480px;
+}
+
+a.curriculo button {
+  margin-top: 2rem;
+  background: linear-gradient(90deg, var(--corVermelha), #af1010);
+  border: none;
+  color: var(--corBranca);
+  width: 180px;
+  height: 58px;
+  border-radius: 14px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+a.curriculo:hover button {
+  transform: scale(0.9);
+  background: #af1010;
+}
+
+section.introducao p.biografia {
+  font-size: 1.3rem;
+}
+
+.introducao > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

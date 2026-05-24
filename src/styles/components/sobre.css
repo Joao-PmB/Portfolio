@@ -1,0 +1,36 @@
+section.sobre-mim > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section.sobre-mim .txt-sobre .titulo-section,
+section.habilidades .titulo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--corBranca);
+  gap: 10px;
+}
+
+section.sobre-mim .txt-sobre p {
+  width: 1000px;
+  margin: 36px 0;
+  text-align: justify;
+  color: var(--corCinza);
+}
+
+section.sobre-mim span p {
+  color: var(--corVermelha);
+  margin-bottom: 15px;
+  width: 1000px;
+  text-align: center;
+}
+
+section.sobre-mim .btn-redes button {
+  width: 48px;
+  height: 48px;
+  font-size: 26px;
+  margin-right: 10px;
+}

@@ -1,0 +1,61 @@
+.logotipo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Fira Code", monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--corBranca);
+}
+
+.logotipo:hover {
+  opacity: 0.8;
+}
+
+.logotipo .bracket,
+.logotipo .barra {
+  color: var(--corVermelha);
+}
+
+.logotipo .name {
+  color: var(--corBranca);
+  margin: 0 4px;
+}
+
+header {
+  background-color: var(--corPreta);
+  padding: 16px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+header > .interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav.menu-desktop ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+header nav.menu-desktop a {
+  text-decoration: none;
+  color: var(--corVermelha);
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+header nav.menu-desktop a:hover {
+  color: var(--corBranca);
+  text-decoration: underline;
+}
+
+header nav.menu-desktop button {
+  width: 144px;
+  height: 48px;
+}
