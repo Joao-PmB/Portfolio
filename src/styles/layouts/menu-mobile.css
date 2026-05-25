@@ -1,0 +1,50 @@
+.btn-menu-mobile {
+display: none;
+  font-size: 2rem;
+  color: var(--corVermelha);
+  cursor: pointer;
+}
+
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--corPreta);
+  text-align: right;
+  padding: 32px 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.menu-mobile ul {
+  list-style: none;
+  padding: 64px 0;
+}
+
+.menu-mobile ul a {
+  display: block;
+  color: var(--corVermelha);
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding: 24px;
+  transition: 0.3s;
+}
+
+.menu-mobile ul a:hover {
+  background-color: var(--corVermelha);
+  color: var(--corBranca);
+}
+
+.menu-mobile .bi-x-lg {
+  font-size: 2rem;
+  color: var(--corVermelha);
+  padding: 24px;
+  cursor: pointer;
+}
+
+.menu-mobile.abrir-menu {
+  left: 0;
+  pointer-events: initial;
+}

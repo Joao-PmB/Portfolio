@@ -1,1 +1,10 @@
-// futura funcionalidade de menu mobile aqui
+const btnAbrirMenuMobile = document.getElementById('btn-menu-mobile');
+const menuMobile = document.querySelector('.menu-mobile')
+
+btnAbrirMenuMobile.addEventListener('click', ()=> {
+   menuMobile.classList.add('abrir-menu');
+});
+
+menuMobile.addEventListener('click', ()=> {
+   menuMobile.classList.remove('abrir-menu');
+});

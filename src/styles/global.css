@@ -1,10 +1,11 @@
-@import './components/header.css';
-@import './components/hero.css';
-@import './components/sobre.css';
-@import './components/habilidades.css';
-@import './components/portfolio.css';
-@import './components/footer.css';
-@import './layouts/responsividade.css';
+@import "./components/header.css";
+@import "./components/hero.css";
+@import "./components/sobre.css";
+@import "./components/habilidades.css";
+@import "./components/portfolio.css";
+@import "./components/footer.css";
+@import "./layouts/menu-mobile.css";
+@import "./layouts/responsividade.css";
 
 * {
   margin: 0;

@@ -3,10 +3,14 @@
     display: none;
   }
 
+  .btn-menu-mobile {
+    display: block;
+  }
+
   /* INTRODUÇÃO */
 
   section.introducao > .interface {
-    padding-top: 65px;
+    padding-top: 80px;
   }
 
   .saudacao {
@@ -35,6 +39,7 @@
   }
 
   section.introducao p.biografia {
+    width: 350px;
     font-size: 0.9rem;
     text-align: center;
   }
@@ -51,59 +56,57 @@
 
   /* SOBRE-MIM */
 
-section.sobre-mim .txt-sobre p {
-  width: 350px;
-  text-align: justify;
-  font-size: 0.8rem;
-}
+  section.sobre-mim .txt-sobre p {
+    width: 350px;
+    text-align: justify;
+    font-size: 0.8rem;
+  }
 
-section.sobre-mim span p {
-  color: var(--corVermelha);
-  margin-bottom: 15px;
-  width: 350px;
-  text-align: center;
-}
+  section.sobre-mim span p {
+    color: var(--corVermelha);
+    margin-bottom: 15px;
+    width: 350px;
+    text-align: center;
+  }
 
-section.sobre-mim .btn-redes button {
-  width: 48px;
-  height: 48px;
-  font-size: 26px;
-  margin-right: 10px;
-}
+  section.sobre-mim .btn-redes button {
+    width: 48px;
+    height: 48px;
+    font-size: 26px;
+    margin-right: 10px;
+  }
 
-/* HABILIDADES */
-section.habilidades .tecnologias {
-  gap: 12px;
-}
+  /* HABILIDADES */
+  section.habilidades .tecnologias {
+    gap: 12px;
+  }
 
-section.habilidades .tecnologias .tecnologia-box a {
-  width: 100px;
-  height: 100px;
-}
+  section.habilidades .tecnologias .tecnologia-box a {
+    width: 100px;
+    height: 100px;
+  }
 
-section.habilidades > .interface {
-  padding-bottom: 100px;
-}
+  section.habilidades > .interface {
+    padding-bottom: 100px;
+  }
 
-/* PORTFOLIO */
+  /* PORTFOLIO */
 
-.portfolio .portfolio-container {
-  display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr;
-  gap: 1.5rem;
-}
+  .portfolio .portfolio-container {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    gap: 1.5rem;
+  }
 
-/* Rodapé */
+  /* Rodapé */
 
-footer .btn-redes {
-  display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
-  gap: 80px;
-}
+  footer .btn-redes {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 80px;
+  }
 
-
-footer .btn-redes p {
-  font-size: 0.9rem;
-}
-
+  footer .btn-redes p {
+    font-size: 0.9rem;
+  }
 }
