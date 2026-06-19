@@ -21,10 +21,11 @@ section.habilidades .tecnologias .tecnologia-box a {
   box-shadow: 6px 8px 6px #1a0505;
   cursor: pointer;
   text-decoration: none;
+  transition: 0.5s ease;
 }
 
 section.habilidades .tecnologias .tecnologia-box a:hover {
-  background-color: #2d1010;
+  background-color: #421717;
 }
 
 section.habilidades .tecnologias .tecnologia-box p {

@@ -63,10 +63,12 @@
   }
 
   section.sobre-mim span p {
-    color: var(--corVermelha);
-    margin-bottom: 15px;
+    color: var(--corBranca);
+    border-left: 3px solid var(--corVermelha);
+    padding-left: 16px;
+    font-style: italic;
     width: 350px;
-    text-align: center;
+    text-align: left;
   }
 
   section.sobre-mim .btn-redes button {
@@ -78,12 +80,16 @@
 
   /* HABILIDADES */
   section.habilidades .tecnologias {
-    gap: 12px;
+    gap: 36px;
   }
 
   section.habilidades .tecnologias .tecnologia-box a {
     width: 100px;
     height: 100px;
+  }
+
+  section.habilidades .tecnologias .tecnologia-box p {
+    font-size: 0.9rem;
   }
 
   section.habilidades > .interface {

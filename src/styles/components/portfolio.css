@@ -50,11 +50,17 @@ section.portfolio p {
 }
 
 .portfolio-container .projeto2 {
+    background-image: url(/src/assets/images/githubfinder.png);
+    background-position: center;
+    
+}
+
+.portfolio-container .projeto3 {
     background-image: url(/src/assets/images/Card-Profile.png);
     background-position: top;
 }
 
-.portfolio-container .projeto3 {
+.portfolio-container .projeto4 {
     background-image: url(/src/assets/images/relogio.png);
     background-position: top;
 }

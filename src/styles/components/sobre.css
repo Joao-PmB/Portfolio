@@ -21,12 +21,14 @@ section.sobre-mim .txt-sobre p {
   color: var(--corCinza);
 }
 
-section.sobre-mim span p {
-  color: var(--corVermelha);
-  margin-bottom: 15px;
-  width: 1000px;
-  text-align: center;
-}
+  section.sobre-mim span p {
+    color: var(--corBranca);
+    border-left: 3px solid var(--corVermelha);
+    padding-left: 16px;
+    font-style: italic;
+    width: 1000px;
+    text-align: left;
+  }
 
 section.sobre-mim .btn-redes button {
   width: 48px;
