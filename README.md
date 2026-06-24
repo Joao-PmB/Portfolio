@@ -17,10 +17,7 @@ Acesse o projeto:
 * Apresentação pessoal.
 * Seção de habilidades.
 * Exibição dos projetos desenvolvidos.
-* Links para GitHub, LinkedIn, Whatsapp, E-mail e currículo.
-* Layout totalmente responsivo.
-* Suporte aos idiomas Português e Inglês.
-* Animações suaves para melhorar a experiência do usuário.
+* Links para GitHub, LinkedIn, Whatsapp, E-mail e Currículo.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -32,17 +29,6 @@ Acesse o projeto:
 * GitHub
 * Vercel
 
-## 📚 Principais conceitos aplicados
-
-Durante o desenvolvimento deste projeto foram utilizados conceitos como:
-
-* Estruturação semântica com HTML5
-* Responsividade utilizando CSS
-* Manipulação do DOM
-* Organização e modularização do código
-* Eventos em JavaScript
-* Versionamento de código com Git e GitHub
-* Deploy de aplicações utilizando Vercel
 
 ## 📂 Estrutura do Projeto
 
