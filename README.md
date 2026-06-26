@@ -1,1 +1,81 @@
-Portfólio pessoal funcional e responsivo (PC/Mobile), criado para subir meus projetos ao longo do meu estudo e dedicação como um desenvolvedor.
+# Portfólio Pessoal
+
+Portfólio desenvolvido com HTML, CSS e JavaScript para apresentar meus projetos, habilidades e evolução como estudante de Ciência da Computação e desenvolvedor web.
+
+O projeto foi criado com o objetivo de reunir meus principais trabalhos, centralizar meus projetos e acompanhar minha evolução como desenvolvedor em um único lugar, proporcionando uma navegação intuitiva e uma interface responsiva para diferentes dispositivos.
+
+Durante o desenvolvimento, foram aplicados conceitos de organização de projetos, UX/UI, responsividade e manipulação do DOM.
+
+## 📸 Demonstração
+
+Acesse o projeto:
+
+**🔗 [https://portfolio-zeta-ten-aet3w7o2ef.vercel.app/](https://portfolio-zeta-ten-aet3w7o2ef.vercel.app/)**
+
+## 🚀 Funcionalidades
+
+* Apresentação pessoal.
+* Seção de habilidades.
+* Exibição dos projetos desenvolvidos.
+* Links para GitHub, LinkedIn, Whatsapp, E-mail e currículo.
+* Layout totalmente responsivo.
+* Suporte aos idiomas Português e Inglês.
+* Animações suaves para melhorar a experiência do usuário.
+
+## 🛠️ Tecnologias Utilizadas
+
+* HTML5
+* CSS3
+* JavaScript (ES6+)
+* Bootstrap Icons
+* Git
+* GitHub
+* Vercel
+
+## 📚 Principais conceitos aplicados
+
+Durante o desenvolvimento deste projeto foram utilizados conceitos como:
+
+* Estruturação semântica com HTML5
+* Responsividade utilizando CSS
+* Manipulação do DOM
+* Organização e modularização do código
+* Eventos em JavaScript
+* Versionamento de código com Git e GitHub
+* Deploy de aplicações utilizando Vercel
+
+## 📂 Estrutura do Projeto
+
+```text
+PORTF-LIO/
+│
+├── src/
+│   ├── assets/
+│   │   ├── docs
+│   │   │   └── Meu currículo em pdf.
+│   │   │
+│   │   └── images/
+│   │       └── Imagens de todos os meus projetos.
+│   │
+│   ├── scripts/
+│   │   └── menu-mobile.js
+│   │
+│   └── styles/
+│       ├── components/
+│       │   ├── footer.css
+│       │   ├── habilidades.css
+│       │   ├── header.css
+│       │   ├── hero.css
+│       │   ├── portfolio.css
+│       │   └── sobre.css
+│       │
+│       ├── layouts/
+│       │   ├── menu-mobile.css
+│       │   └── responsividade.css
+│       │
+│       └── global.css
+│
+├── index.html
+│
+└── README.md
+```
